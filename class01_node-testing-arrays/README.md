@@ -46,6 +46,10 @@ What are responsibilities?
     * Client, Server [, Database]
 * Some systems are "Headless" - pure logic and execution, no UI
 
+### Function passing
+
+[Three Function passing patterns](https://github.com/martypdx/workshop-promises-fat-arrows/blob/master/async-js-patterns.md)
+
 ### NodeJS
 
 * Version ~~8~~ 9 (everything but ESModule!)
