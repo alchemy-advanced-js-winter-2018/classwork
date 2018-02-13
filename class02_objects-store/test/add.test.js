@@ -1,6 +1,7 @@
 const assert = require('assert');
 const add = require('../lib/add');
 
-it('add two numbers', () => {
-    assert.equal(add(1, 2), 3);
+it.skip('adds two numbers', () => {
+    const sum = add(1, 2);
+    assert.equal(sum, 3);
 });

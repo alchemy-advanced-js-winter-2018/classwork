@@ -170,7 +170,7 @@ _using `npm` and the project `package.json` file_.
 
 * Assignment to variable or argument
 * Property: `const { first, last } = person;`
-* Array Index: `const [x, y, z] = [1, 2, 3];
+* Array Index: `const [x, y, z] = [1, 2, 3];`
 * Always requires parens `()` in arrow function `=>`
 
 ### REST operator
