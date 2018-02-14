@@ -4,7 +4,7 @@ const request = require('superagent');
 
 console.log('A - Start of file');
 
-fs.readFileSync('foo.txt');
+const fooFile = fs.readFileSync('foo.txt');
 
 console.log('A.1/2 - after readFileSync');
 
