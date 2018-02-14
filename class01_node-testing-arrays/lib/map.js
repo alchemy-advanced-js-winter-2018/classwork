@@ -1,13 +1,11 @@
 
-
 function map(array, callback) {
-    const result = [];
-    
+    const mapped = [];
     for(let i = 0; i < array.length; i++) {
-        
+        mapped[i] = callback(array[i], i);
     }
 
-    return result;
+    return mapped;
 }
 
 module.exports = map;

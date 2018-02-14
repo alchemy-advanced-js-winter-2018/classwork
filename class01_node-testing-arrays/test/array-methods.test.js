@@ -3,21 +3,11 @@ const forEach = require('../lib/for-each');
 const map = require('../lib/map');
 
 describe('array methods', () => {
-    
-    // instead of:
-    // array.forEach(fn)
-    // we will use:
-    // forEach(array, fn);
-
-    function testIndexes(/* what would we pass? */) {
-        // test indexes here
-    }
-
+  
     it('forEach', () => {
         const array = ['a', 'b', 'c'];
         
         let result = '';
-
         forEach(array, each => {
             result += each;
         });
@@ -29,7 +19,6 @@ describe('array methods', () => {
         const array = ['a', 'b', 'c'];
         
         const indexes = [];
-
         forEach(array, (each, i) => {
             indexes[i] = i;
         });
@@ -49,7 +38,6 @@ describe('array methods', () => {
         const array = [1, 2, 3];
 
         const indexes = [];
-
         map(array, (each, i) => {
             indexes[i] = i;
         });
