@@ -2,7 +2,7 @@ import Store from 'charly-state-store';
 
 export default class Counter extends Store {
   constructor() {
-    // call the super constuctor
+    // call the super constructor
     super();
 
     //initialize the state
