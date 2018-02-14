@@ -8,9 +8,7 @@ describe('array methods', () => {
         const array = ['a', 'b', 'c'];
         
         let result = '';
-        forEach(array, each => {
-            result += each;
-        });
+        forEach(array, each => result += each);
 
         assert.equal(result, 'abc');
     });
@@ -19,9 +17,7 @@ describe('array methods', () => {
         const array = ['a', 'b', 'c'];
         
         const indexes = [];
-        forEach(array, (each, i) => {
-            indexes[i] = i;
-        });
+        forEach(array, (each, i) => indexes[i] = i);
 
         assert.deepEqual(indexes, [0, 1, 2]);
     });
@@ -38,9 +34,7 @@ describe('array methods', () => {
         const array = [1, 2, 3];
 
         const indexes = [];
-        map(array, (each, i) => {
-            indexes[i] = i;
-        });
+        map(array, (each, i) => indexes[i] = i);
 
         assert.deepEqual(indexes, [0, 1, 2]);
     });
