@@ -6,7 +6,7 @@ const findIndex = require('../lib/find-index');
 const every = require('../lib/every');
 const reduce = require('../lib/reduce');
 
-describe('array methods', () => {
+describe.skip('array methods', () => {
     
     it('forEach', () => {
         const array = ['a', 'b', 'c'];
