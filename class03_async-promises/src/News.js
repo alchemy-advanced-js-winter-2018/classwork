@@ -53,12 +53,18 @@ export default class News extends Store {
   searchNews() {
     const { topic, page, pageSize } = this.state;
 
-    getNews(topic, page, pageSize).then(response => {
-      this.setState({ 
-        news: response.articles,
-        total: response.totalResults
+    getNews(topic, page, pageSize)
+      .then(response => {
+        this.setState({ 
+          news: response.articles,
+          total: response.totalResults,
+          // clear error on good search
+          error: null
+        });
+      })
+      .catch(err => {
+        // set state of error
       });
-    });
   }
 
   // this is how we update based on state.
