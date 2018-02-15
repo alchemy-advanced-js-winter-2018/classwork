@@ -1,0 +1,7 @@
+li.todo {
+  width: 300px;
+
+  button.remove {
+    float: right;
+  }
+}
